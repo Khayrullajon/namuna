@@ -1,0 +1,107 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
+        .birinchi{
+            list-style-type: none;
+            display: flex;
+        }
+        .dd{
+            list-style-type: none;
+            display: flex;
+        }
+        .bir{
+            margin-left: 8px;
+
+        }
+        header{
+            background-color: lime;
+            padding: 15px 20px;
+
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        .ikki{
+            display: inline-block;
+
+            background-color: gold;
+            padding: 5px 5px;
+
+
+
+        }
+        .ikki:hover{
+            background-color: aqua;
+        }
+        .ikkinchi{
+            margin-top: 15px;
+            display: none;
+            position: absolute;
+            transition: 3s;
+        }
+
+        .birinchi:hover  .ikkinchi{
+            display: block;
+            transition: background-color 3s ease ;
+        }
+        .katt{
+            display: flex;
+        }
+        .rang{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+
+        }
+        .rang:hover{
+            background-color: aqua;
+            transition: background-color 3s ease;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="katt">
+        <div class="dd">
+            <li class="bir"><a href="">home1</a></li>
+            <li class="bir"><a href="">home2</a></li>
+            <li class="bir"><a href="">home3</a></li>
+        </div>
+        <div class="ss">
+            <ul class="birinchi">
+
+                <li class="bir "><a class="tort" href="">home4</a></li>
+
+                <ul class="ikkinchi">
+                    <li class="ikki"><a href="">lolo</a></li>
+                    <br>
+                    <li class="ikki"><a href="">lolo</a></li>
+                    <br>
+                    <li class="ikki"><a href="">lolo</a></li>
+                    <br>
+                    <li class="ikki"><a href="">lolo</a></li>
+                </ul>
+
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="rang">
+
+</div>
+</body>
+</html>
